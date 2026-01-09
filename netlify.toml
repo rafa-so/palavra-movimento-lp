@@ -1,0 +1,4 @@
+# Netlify configuration
+# Public directory is the "src" folder where index.html lives
+[build]
+  publish = "src"
