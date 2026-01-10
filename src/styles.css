@@ -212,6 +212,97 @@ body {
   line-height: 1.7;
 }
 
+/* Meetings Section */
+.meetings-section {
+  padding: 5rem 0;
+  background: var(--cream-bg);
+}
+
+.meetings-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-navy);
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.meetings-description {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.7;
+}
+
+.current-books {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.current-books h3 {
+  font-size: 2rem;
+  color: var(--primary-navy);
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.book-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-image-placeholder {
+  width: 200px;
+  height: 280px;
+  background: linear-gradient(135deg, var(--light-cream) 0%, white 100%);
+  border: 3px dashed var(--primary-gold);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(44, 62, 80, 0.1);
+}
+
+.book-image-placeholder:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(44, 62, 80, 0.15);
+  border-color: var(--primary-navy);
+}
+
+.participate-button {
+  background: linear-gradient(135deg, var(--primary-gold) 0%, var(--primary-navy) 100%);
+  color: white;
+  border: none;
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+.participate-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(212, 175, 55, 0.4);
+}
+
 /* Contact Section */
 .contact-section {
   padding: 5rem 0;
@@ -304,5 +395,19 @@ body {
   
   .about-content {
     grid-template-columns: 1fr;
+  }
+  
+  .books-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .book-image-placeholder {
+    width: 150px;
+    height: 210px;
+  }
+  
+  .meetings-description {
+    font-size: 1.1rem;
   }
 }
